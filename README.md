@@ -40,4 +40,7 @@ git checkout main
 # 合并分支
 git merge feature-branch
 
-git config --global user.name "DawnRonan"
+git config --global user.name "DawnRonan"git status
+
+
+不想学了
