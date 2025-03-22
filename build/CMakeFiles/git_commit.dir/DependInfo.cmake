@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/OneDrive/My files/Code/Cprograms/src/HelloWorld.c" "CMakeFiles/HelloWorld.dir/src/HelloWorld.c.obj" "gcc" "CMakeFiles/HelloWorld.dir/src/HelloWorld.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

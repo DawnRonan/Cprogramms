@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
@@ -299,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/msys64/mingw64/bin/gcc.exe"
 		},
 		{
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/CPROGRAMS"
+			"value" : "C:/Program Files (x86)/CPrograms"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -903,7 +903,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "CPROGRAMS"
+			"value" : "CPrograms"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1298,7 +1298,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "CPROGRAMS_BINARY_DIR",
+			"name" : "CPrograms_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1310,7 +1310,7 @@
 			"value" : "D:/OneDrive/My files/Code/Cprograms/build"
 		},
 		{
-			"name" : "CPROGRAMS_IS_TOP_LEVEL",
+			"name" : "CPrograms_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1322,7 +1322,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "CPROGRAMS_SOURCE_DIR",
+			"name" : "CPrograms_SOURCE_DIR",
 			"properties" : 
 			[
 				{

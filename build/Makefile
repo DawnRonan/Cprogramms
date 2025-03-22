@@ -117,41 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HelloWorld
+# Target rules for targets named git_commit
 
 # Build rule for target.
-HelloWorld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloWorld
-.PHONY : HelloWorld
+git_commit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 git_commit
+.PHONY : git_commit
 
 # fast build rule for target.
-HelloWorld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
-.PHONY : HelloWorld/fast
-
-src/HelloWorld.obj: src/HelloWorld.c.obj
-.PHONY : src/HelloWorld.obj
-
-# target to build an object file
-src/HelloWorld.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.c.obj
-.PHONY : src/HelloWorld.c.obj
-
-src/HelloWorld.i: src/HelloWorld.c.i
-.PHONY : src/HelloWorld.i
-
-# target to preprocess a source file
-src/HelloWorld.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.c.i
-.PHONY : src/HelloWorld.c.i
-
-src/HelloWorld.s: src/HelloWorld.c.s
-.PHONY : src/HelloWorld.s
-
-# target to generate assembly for a file
-src/HelloWorld.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.c.s
-.PHONY : src/HelloWorld.c.s
+git_commit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/git_commit.dir/build.make CMakeFiles/git_commit.dir/build
+.PHONY : git_commit/fast
 
 # Help Target
 help:
@@ -161,10 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HelloWorld"
-	@echo "... src/HelloWorld.obj"
-	@echo "... src/HelloWorld.i"
-	@echo "... src/HelloWorld.s"
+	@echo "... git_commit"
 .PHONY : help
 
 
