@@ -6,7 +6,8 @@ int main() {
 
     if (flag) {
         printf("flag is TRUE\n");
-    } else {
+    }
+    else {
         printf("flag is FALSE\n");
     }
 

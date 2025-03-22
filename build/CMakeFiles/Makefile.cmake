@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "D:/OneDrive/My files/Code/Cprograms/CMakeLists.txt"
-  "D:/OneDrive/My files/Code/Cprograms/GitOperations.cmake"
   "CMakeFiles/4.0.0-rc4/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.0-rc4/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.0-rc4/CMakeRCCompiler.cmake"
@@ -60,5 +59,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/git_commit.dir/DependInfo.cmake"
   )

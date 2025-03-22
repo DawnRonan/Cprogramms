@@ -41,6 +41,3 @@ git checkout main
 git merge feature-branch
 
 git config --global user.name "DawnRonan"git status
-
-
-不想学了

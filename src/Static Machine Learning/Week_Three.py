@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # 定义 x 轴范围
 x1 = np.linspace(0, 10, 100)   # 从 0 到 10 生成 100 个点
 x2 = np.linspace(10, 25, 100)   # 从 10 到 25 生成 100 个点
-x3 = np.linspace(25, 35, 100)  
+x3 = np.linspace(25, 35, 100)
 
 # 定义对应的 y 值
 y1 = x1
@@ -36,7 +36,7 @@ plt.show()
 def x_value(a, b):
     """
     返回两个数的和。
-    
+
     :param a: 第一个数字
     :param b: 第二个数字
     :return: x的值
@@ -55,7 +55,7 @@ print("结果是:", result1, result2, result3)
 def create_identity_matrix(n):
     """
     创建一个 n x n 的单位矩阵，对角线元素为 1。
-    
+
     :param n: 矩阵的大小
     :return: 对角线为 1 的 n x n 矩阵
     """
@@ -68,7 +68,7 @@ print(matrix)
 def triangle_area(a, b, c):
     """
     计算两个 3D 向量的叉积。
-    
+
     :param a: 向量 a（列表或 NumPy 数组）
     :param b: 向量 b（列表或 NumPy 数组）
     :return: 叉积向量
@@ -88,4 +88,3 @@ c = [0, 0]
 
 area = triangle_area(a, b, c)   # 3D 向量的叉积
 print(f"面积: {area}")
-

@@ -30,4 +30,3 @@ word = "Python"
 # 在句子后添加单词
 new_sentence = sentence + " " + word
 print(new_sentence)
-

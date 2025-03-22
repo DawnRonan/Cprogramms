@@ -19,7 +19,7 @@ class SoftMarginPerceptron:
             for i, x_i in enumerate(X):
                 # 计算 ξ_i
                 self.xi[i] = max(0, 1 - y[i] * (np.dot(self.w, x_i) + self.b))
-                
+
                 # 误分类更新
                 if self.xi[i] > 0:
                     self.w += self.lr * (y[i] * x_i - 2 * self.C * self.w)  # 更新权重
