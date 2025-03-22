@@ -39,3 +39,5 @@ git checkout main
 
 # 合并分支
 git merge feature-branch
+
+git config --global user.name "DawnRonan"
