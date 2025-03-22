@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/OneDrive/My files/Code/Cprograms/build",
+  "command": "C:/msys64/mingw64/bin/gcc.exe   -g -o CMakeFiles/HelloWorld.dir/src/HelloWorld.c.obj -c \"D:/OneDrive/My files/Code/Cprograms/src/HelloWorld.c\"",
+  "file": "D:/OneDrive/My files/Code/Cprograms/src/HelloWorld.c",
+  "output": "CMakeFiles/HelloWorld.dir/src/HelloWorld.c.obj"
+}
+]
