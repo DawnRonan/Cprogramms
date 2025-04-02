@@ -1,71 +1,70 @@
 import tkinter as tk
 from tkinter import scrolledtext
-class app:
+
+class App:
     def __init__(self, root):
         self.window = root
-        self.window.title("Static Machine Learning")
-        w = self.window.winfo_screenwidth()
-        h = self.window.winfo_screenheight()
+        self.window.title("Static Machine Learning Calculator")
+        w = 300
+        h = 550
         self.window.geometry(f"{w}x{h}+0+0")
 
-        self.label = tk.Label(self.window, text="Welcome to Static Machine Learning!")
-        self.label.pack(fill=tk.X, padx=20, pady=10)
+        self.label = tk.Label(self.window, text="Welcome to Static Machine Learning Calculator!")
+        self.label.pack(fill=tk.X, expand=True)
+
+        self.message_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, state=tk.DISABLED, height=10)
+        self.message_area.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        self.current_input = ""  # 用于保存当前输入的表达式
+
         key_pad_frame = tk.Frame(self.window)
-        button_7 = tk.Button(key_pad_frame, text="7", command=self.button_7_click)
-        button_7.grid(row=0, column=0)
-        button_8 = tk.Button(key_pad_frame, text="8", command=self.button_8_click)
-        button_8.grid(row=0, column=1)
-        button_9 = tk.Button(key_pad_frame, text="9", command=self.button_9_click)
-        button_9.grid(row=0, column=2)
-        button_4 = tk.Button(key_pad_frame, text="4", command=self.button_4_click)
-        button_4.grid(row=1, column=0)
-        button_5 = tk.Button(key_pad_frame, text="5", command=self.button_5_click)
-        button_5.grid(row=1, column=1)
-        button_6 = tk.Button(key_pad_frame, text="6", command=self.button_6_click)
-        button_6.grid(row=1, column=2)
-        button_1 = tk.Button(key_pad_frame, text="1", command=self.button_1_click)
-        button_1.grid(row=2, column=0)
-        button_2 = tk.Button(key_pad_frame, text="2", command=self.button_2_click)
-        button_2.grid(row=2, column=1)
-        button_3 = tk.Button(key_pad_frame, text="3", command=self.button_3_click)
-        button_3.grid(row=2, column=2)
-    def button_7_click(self):
-        self.entry.insert(tk.END, "7")
-    def button_8_click(self):
-        self.entry.insert(tk.END, "8")
-    def button_9_click(self):
-        self.entry.insert(tk.END, "9")
-    def button_4_click(self):
-        self.entry.insert(tk.END, "4")
-    def button_5_click(self):
-        self.entry.insert(tk.END, "5")
-    def button_6_click(self):
-        self.entry.insert(tk.END, "6")
-    def button_1_click(self):
-        self.entry.insert(tk.END, "1")
-    def button_2_click(self):
-        self.entry.insert(tk.END, "2")
-    def button_3_click(self):
-        self.entry.insert(tk.END, "3")
+
+        # 创建按钮并放置
+        buttons = [
+            ("7", 0, 0), ("8", 0, 1), ("9", 0, 2), ("+", 0, 3),
+            ("4", 1, 0), ("5", 1, 1), ("6", 1, 2), ("-", 1, 3),
+            ("1", 2, 0), ("2", 2, 1), ("3", 2, 2), ("*", 2, 3),
+            ("C", 3, 0), ("0", 3, 1), ("=", 3, 2), ("/", 3, 3)
+        ]
+
+        for (text, row, col) in buttons:
+            button = tk.Button(key_pad_frame, text=text, command=lambda t=text: self.button_click(t))
+            button.grid(row=row, column=col, padx=5, pady=5)
+
+        key_pad_frame.pack()
+
+    def button_click(self, char):
+        """ 处理按钮点击事件 """
+        if char == "=":
+            try:
+                # 计算当前输入的表达式
+                result = eval(self.current_input)
+                self.log(f"= {result}")
+                self.current_input = str(result)  # 将计算结果保存为当前输入
+            except Exception as e:
+                self.log(f"Error: {e}")
+                self.current_input = ""
+        elif char == "C":
+            # 清除输入
+            self.current_input = ""
+            self.log("Cleared")
+        else:
+            # 将字符添加到当前输入
+            self.current_input += char
+            self.log(self.current_input)
+
     def log(self, message):
+        """ 在消息区域显示输入内容 """
         self.message_area.config(state=tk.NORMAL)
-        self.text_area.insert(tk.END, message + "\n")
+        self.message_area.delete(1.0, tk.END)  # 清空已有内容
+        self.message_area.insert(tk.END, message + "\n")
         self.message_area.config(state=tk.DISABLED)
-        self.text_area.see(tk.END)
+        self.message_area.see(tk.END)
+
 def main():
     root = tk.Tk()
-    root.title("Static Machine Learning")
-    w = root.winfo_screenwidth()
-    h = root.winfo_screenheight()
-    root.geometry(f"{w}x{h}+0+0")
-
-    label = tk.Label(root, text="Welcome to Static Machine Learning!")
-    label.pack(pady=20)
-    entry = tk.Entry(root, width=50)
-    entry.pack(fill=tk.X, padx=20, pady=10)
-    button = tk.Button(root, text="Exit", command=root.quit)
-    button.pack(pady=10)
-
+    app = App(root)  # 创建 GUI 应用
     root.mainloop()
+
 if __name__ == "__main__":
     main()
