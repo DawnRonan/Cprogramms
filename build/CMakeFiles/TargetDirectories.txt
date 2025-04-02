@@ -1,2 +1,0 @@
-D:/OneDrive/My files/Code/Cprograms/build/CMakeFiles/edit_cache.dir
-D:/OneDrive/My files/Code/Cprograms/build/CMakeFiles/rebuild_cache.dir

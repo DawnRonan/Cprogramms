@@ -8,8 +8,6 @@ github_pat_11A43WSEY06JUaSeBkp0nr_2puifrGDwtaaEO1NZUiYzJAFvEi1CyJYmjj825k62nuZDQ
 # 修改文件
 git stash  # 临时保存所有未提交的更改，并恢复工作区状态
 
-# 你可以切换到其他分支进行其他工作
-
 # 恢复之前保存的更改
 git stash pop  # 恢复并删除保存的更改
 
