@@ -4,38 +4,16 @@ C/C++ Learning
 # Token
 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
 
-
-# 修改文件
 git stash  # 临时保存所有未提交的更改，并恢复工作区状态
-
-# 恢复之前保存的更改
 git stash pop  # 恢复并删除保存的更改
 
+git status	查看当前仓库状态
+git add <文件名>	将文件添加到暂存区
+git commit -m "信息"	提交暂存的更改
 
-# 修改文件
-git add file1.c  # 将 file1.c 添加到暂存区
-git commit -m "Update file1"  # 提交暂存区的更改
+git reset --soft HEAD~1	撤销最近提交，保留暂存区
+git reset --mixed HEAD~1	撤销最近提交，保留修改但不暂存
+git reset --hard HEAD~1	撤销最近提交，并丢弃所有未提交的修改
 
-# 创建新分支
-git checkout -b feature-branch
-
-# 检查当前分支
-git branch
-
-# 添加到暂存区
-git add <file_name>
-git add .
-
-# 提交文件
-git commit -m "WIP: working on feature X"
-
-# 推送
-git push origin main
-
-# 转到主分支
-git checkout main
-
-# 合并分支
-git merge feature-branch
-
-git config --global user.name "DawnRonan"git status
+git add "src/Static Machine Learning/Apr2rd.py"
+git add.
