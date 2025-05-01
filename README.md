@@ -1,21 +1,35 @@
-# Cprogramms
-C/C++ Learning
+# C Programs for Embedded Systems
 
-# Token
-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
+This repository contains various C programs designed for embedded systems development. The programs are tailored for AVR microcontrollers and demonstrate the use of timers, interrupts, GPIO, and other peripherals. The folder is structured to include source code, utilities, and documentation for easy navigation and understanding.
 
-git stash  # 临时保存所有未提交的更改，并恢复工作区状态
-git stash pop  # 恢复并删除保存的更改
+---
 
-git status	查看当前仓库状态
-git add <文件名>	将文件添加到暂存区
-git commit -m "信息"	提交暂存的更改
+## **Folder Structure**
 
-git reset --soft HEAD~1	撤销最近提交，保留暂存区
-git reset --mixed HEAD~1	撤销最近提交，保留修改但不暂存
-git reset --hard HEAD~1	撤销最近提交，并丢弃所有未提交的修改
+### **Key Files**
+- **`src/Embedded System/Simple_Test.c`**:
+  - Implements a stopwatch-like functionality using AVR microcontroller features such as timers, interrupts, and GPIO.
+  - Includes button-controlled operations and LED outputs.
+  - Demonstrates modular programming with functions for initialization, button handling, and display control.
 
-git add "src/Static Machine Learning/Apr2rd.py"
-git add.
+- **`README.md`**:
+  - Documentation for the folder and its contents.
 
-git pull origin main
+---
+
+## **Features**
+- **Stopwatch Implementation**:
+  - Start, pause, and reset functionality controlled by buttons.
+  - Timer-based interrupts for precise timekeeping.
+
+- **LED Control**:
+  - Dynamic LED patterns controlled by button presses.
+  - 7-segment display integration for numeric output.
+
+- **Button Handling**:
+  - Debouncing logic for reliable button press detection.
+  - Multiple button functionalities for different operations.
+
+- **Modular Design**:
+  - Functions for initialization, button handling, and display updates.
+  - Easily extendable for additional features.
