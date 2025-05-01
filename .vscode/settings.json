@@ -1,3 +1,26 @@
 {
-    "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe"
+  "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+  "files.associations": {
+    "charconv": "c",
+    "optional": "c",
+    "format": "c",
+    "system_error": "c",
+    "array": "c",
+    "functional": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c",
+    "cstdint": "c",
+    "limits": "c",
+    "string": "c",
+    "string_view": "c",
+    "span": "c"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "c": true
+  }
 }

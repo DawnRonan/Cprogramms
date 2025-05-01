@@ -17,3 +17,5 @@ git reset --hard HEAD~1	撤销最近提交，并丢弃所有未提交的修改
 
 git add "src/Static Machine Learning/Apr2rd.py"
 git add.
+
+git pull origin main
